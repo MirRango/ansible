@@ -1,0 +1,47 @@
+
+
+
+To install openssh-server:
+sudo apt update && sudo apt install openssh-server
+
+To generate ssh private and public key in ubuntu:
+ssh-keygen -t ed25519 -C "YourComment"
+
+To copy your public key in remote ubunut:
+ssh-copy-id -i ~/.ssh/id_ed25519.pub x@x.x.x.x
+x@x.x.x.x is the username and ip address of remote host.
+
+To create a second ssh key for ansible:
+ssh-keygen -t ed25519 -C "Ansible"
+
+To copy your public key in remote ubunut:
+ssh-copy-id -i ~/.ssh/ansible.pub x@x.x.x.x
+
+
+
+To install git in ubuntu:
+sudo apt update && sudo apt install git
+Git clone> to clone an url
+git config --global user.name "Your github username"
+git config --global user.email "Your github email address"
+git status
+git add name_of_your_file
+git commit -m "Update"
+git push
+
+
+To install ansible in ubuntu:
+sudo apt update 
+sudo apt install ansible
+
+To update the cache and the ask-become-pass is the user password:
+ansible all -m apt -a update_cache=true --become --ask-become-pass
+
+To update all servers:
+ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
+
+To install a package:
+ansible all -m apt -a name=apache2 --become --ask-become-pass
+
+sudo ansible all -m apt -a update_cache=true
+
