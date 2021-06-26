@@ -43,5 +43,42 @@ ansible all -m apt -a "upgrade=dist" --become --ask-become-pass
 To install a package:
 ansible all -m apt -a name=apache2 --become --ask-become-pass
 
+
+
+Creating a play book:
+1 create a file with with yml extention.
+2 I want to install apache2 on all hosts
+3 sudo nano install_apache.yml 
+4 write the code down below and save it.
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install apache2 package
+    apt:
+      name: apache2
+5 install the apache2:
+ansible-playbook --ask-become-pass install_apache.yml
+
 sudo ansible all -m apt -a update_cache=true
 
+
+
+Creating a play book:
+1 create a file with with yml extention.
+2 I want to install apache2 on all hosts
+3 sudo nano install_apache.yml 
+4 write the code down below and save it.
+---
+
+- hosts: all
+  become: true
+  tasks:
+
+  - name: install apache2 package
+    apt:
+      name: apache2
+5 install the apache2:
+ansible-playbook --ask-become-pass install_apache.yml
