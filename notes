@@ -26,6 +26,7 @@ git config --global user.name "Your github username"
 git config --global user.email "Your github email address"
 git status
 git add name_of_your_file
+git add . adds everything for the current directory into commit -m that we are going to send to the git.hub
 git commit -m "Update"
 git push
 
