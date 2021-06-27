@@ -83,3 +83,14 @@ Creating a play book:
       name: apache2
 5 install the apache2:
 ansible-playbook --ask-become-pass install_apache.yml
+
+
+To install apache2 or httpd in centOS:
+apt = dnf in CentOS
+apache2 = httpd in CentOS
+dnf install httpd
+we need to start httpd in centOS:
+systemctl status httpd
+systemctl start httpd
+We need to allow httpd in firewall:
+firewall-cmd --add-port=80/tcp
