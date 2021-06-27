@@ -29,7 +29,7 @@ git add name_of_your_file
 git add . adds everything for the current directory into commit -m that we are going to send to the git.hub
 git commit -m "Update"
 git push
-
+git pull   It downloads from your github
 
 To install ansible in ubuntu:
 sudo apt update 
