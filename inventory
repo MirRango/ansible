@@ -1,3 +1,4 @@
-mirzad@192.168.0.115
-mirzad@192.168.0.110
-mir@192.168.0.117
+mirzad@192.168.0.115 apache_package=apache2 php_package=libapache2-mod-php
+mirzad@192.168.0.110 apache_package=apache2 php_package=libapache2-mod-php
+mir@192.168.0.117 apache_package=httpd php_package=php
+
