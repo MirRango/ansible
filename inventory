@@ -1,8 +1,8 @@
 [web_server]
-mirzad@192.168.0.115
+mirzad@192.168.0.108
 mir@192.168.0.117
 
 [db_server]
-mirzad@192.168.0.110 
+mirzad@192.168.0.109 
 
 

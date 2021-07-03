@@ -84,6 +84,12 @@ Creating a play book:
 5 install the apache2:
 ansible-playbook --ask-become-pass install_apache.yml
 
+call with tags:
+ansible-playbook --tags ubuntu --ask-become-pass site.yml    This is a single cal tag
+ansible-playbook --tags "db,apache" --ask-become-pass site.yml   This is a multi call tag
+
+
+
 
 To install apache2 or httpd in centOS:
 apt = dnf in CentOS
